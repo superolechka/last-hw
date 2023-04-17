@@ -1,0 +1,167 @@
+body {
+  height: 100vh;
+  padding: 10px;
+  background-image: url('./Desktop.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgb(121,167,114);
+  overflow: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.show {
+  height: 40px;
+  padding: 2px 8px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  color: rgb(200,200,200);
+  background-color: rgb(121,167,114);
+  border: 1px solid rgb(13,57,10);
+  border-radius: 8px;
+}
+.show:hover {
+  background: #ccdbf5;
+  color: rgb(100,100,100);
+  transition: all 0.5s;
+}
+.show:active {
+  box-shadow: 0 3px 3px 0 rgba(126,145,121, 0.8),
+    0 8px 12px 6px rgba(183, 243, 45, 0.35);
+  outline: none;
+}
+.show:focus {
+  outline: none;
+  border: 2px solid rgb(39,114,34);
+}
+
+.left-btn {
+  float: left;
+  margin-top: 420px;
+}
+.right-btn {
+  float: right;
+  margin-top: 420px;
+}
+
+.navigation-btn {
+  display: inline-block;
+  text-align: center;
+  padding: 4px 16px;
+  cursor: pointer;
+  line-height: 2;
+  color: rgb(200,200,200);
+  background-color: rgb(121,167,114);
+  border: 1px solid rgb(13,57,10);
+  border-radius: 8px;
+  outline: transparent;
+}
+.navigation-btn:disabled {
+  background-color: rgb(121,167,114, 0.1);
+}
+
+i {
+  border: solid  rgb(100,100,100);;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(130, 130, 130, 0.5);
+}
+
+.heroes {
+  max-width: 85%;
+  margin: 400px auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+.hidden {
+  visibility: hidden;
+}
+
+.hero {
+  border: 0.5px dotted rgb(121,167,114);
+  border-radius: 8px;
+  padding: 10px;
+  background-color: rgba(7,41,5, 0.5);
+}
+.hero:hover {
+  cursor: pointer;
+  color: rgb(200,200,200);
+  background-color: rgba(121,167,114, 0.4);
+  transition: all 0.5s;
+}
+
+.heroCard {
+  position: fixed;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  max-width: 400px;
+  min-width: 250px;
+  height: fit-content;
+  padding: 10px;
+  z-index: 10;
+  background-color: rgb(169,251,162);
+  border-radius: 8px;
+  color: rgb(10,45,8);
+}
+.heroCard ul {
+  list-style: none;
+  border-radius: 8px;
+  border: 0.5px dotted rgb(10,45,8);
+}
+.heroCard ul li {
+  border: 0.5px dotted rgb(10,45,8);
+  padding: 5px;
+}
+
+table td {
+  border: 0.5px dotted rgb(10,45,8);
+  padding: 5px;
+  width: 100%;
+}
+.first-col {
+  max-width: 30%;
+}
+
+.close-btn {
+  height: 40px;
+  padding: 8px 24px;
+  margin-top: 15px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color:rgb(18,69,13);
+  border-radius: 8px;
+  border: rgb(10,45,8);
+  color: rgb(200,200,200);
+  cursor: pointer;
+}
+.close-btn:hover {
+  background: rgba(58, 149, 174, 0.5);
+  color: rgb(100,100,100);
+}

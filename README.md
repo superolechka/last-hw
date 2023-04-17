@@ -1,2 +1,1 @@
-# last-hw
-проект. Додаток, який виводить інформацію про героїв "Star wars"
+# project-js-advance
